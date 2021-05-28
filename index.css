@@ -11,17 +11,17 @@ nav{
 	height: 53px;
     opacity: 0.5;
 }
- nav a{
+ a{
 	color: white;
 	padding: 10px 30px;
 	font-weight: bold;
 	font-size: 30px;
 	text-shadow: 2px 2px 12px white;
 }
-nav a:hover{ border:3px solid round white;
+ a:hover{ border:3px solid white;
 	color: black;
 	background-color: white;
-	box-shadow: 0px 0px 10px white;
+	box-shadow: 3px 3px 10px white;
 	text-shadow: 2px 2px 8px black}
 /*background image*/
 #home {
@@ -75,6 +75,7 @@ padding-left: 45px;
    	    font-size: 50px;
         text-shadow: 2px 2px 10px white;
    }
+   
    /* placeholder image is used from  web sitehttps://via.placeholder.com/200.jpg*/
    
    .portfolio {
@@ -101,11 +102,21 @@ padding-left: 45px;
 	font-size: 29px;
 	text-align: center;
    padding: 60px 0px;
-/*  background: url(wood1.jpg ) no-repeat center center/cover;*/
       background: linear-gradient(61deg, #da0e15,white,yellow,green,black,white,orange, #402190);
   color: wheat;
   text-shadow: 2px 2px 6px white;
 }
+/*#contact a{color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px 12px white;
+}*/
+/* #contact a:hover{ border:3px solid  white;
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 10px white;
+  text-shadow: 2px 2px 8px black}*/
 form{font-size: 35px;
 padding: 20px;}
 
@@ -127,3 +138,64 @@ input{font-size: 30px;}
     background-color: gray;
     width: max-content;
     margin-left: 50px;}
+
+    #profile{
+      display: flex;
+      flex-direction: row;
+          justify-content: flex-start;
+    font-size: 20px;
+    border: 6px solid #ad2d14;
+    padding: 10px;
+    }
+    #academy , #jobexp{
+      font-size: 20px;
+     display: flex;
+      flex-direction: row;
+    float: left;
+    border: 5px solid white;
+    padding: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 70%;
+}
+
+#foot{
+  color: red;
+
+}
+.job{
+ margin: 10px;
+ padding-left: 20px;
+}
+.school{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  align-items: baseline;
+}
+.sub{
+  margin-left: 30px;
+}
+
+.myskills{
+  float: right;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 30px 0px 0px 30px;
+  width: 23%;
+  font-size: 28px;
+}
+.t{height: 5px;
+     width: 80%;
+     background-color: white;}
+        .three{height: 5px;
+     width: 60%;
+     background-color: black;}
+
+     .four{height: 5px;
+     width: 80%;
+     background-color: black;}
+
+     .five{height: 5px;
+     width: 100%;
+     background-color: black;}
