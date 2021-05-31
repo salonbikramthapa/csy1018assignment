@@ -310,4 +310,15 @@ input{font-size: 30px;}
       .src{height: 20px;
         width: 20px;}
 
-        <!-- CodeWithHarry(28 april 2021) CSS Tutorial In Hindi (With Notes) 🔥. YouTube[online]. Avilable form:https://www.youtube.com/watch?v=Edsxf_NBFrw [Accessed 15 may 2021-->
+        .description{
+          font-size: 30px;
+        }
+
+        .refrence{
+          font-size: 30px;
+          color: red;
+        }
+
+
+/* CodeWithHarry(28 april 2021) CSS Tutorial In Hindi (With Notes) 🔥. YouTube[online]. 
+Avilable form:https://www.youtube.com/watch?v=Edsxf_NBFrw [Accessed 15 may 2021*/
