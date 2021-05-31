@@ -39,12 +39,37 @@ nav{
     align-items: flex-start;
     z-index: -1;
     top: 0px;
+    animation-name: home;
+animation-duration: 2s;
+animation-iteration-count: 2;
 }
+
+@keyframes home{
+  0%{opacity: 0.2;}
+    25%{opacity: 0.5;}
+    50%{opacity: 0.7;}
+    100%{opacity:0.9;}
+}
+
 /*name*/
 .main{font-size: 55px;
 text-align: center;
 color: white;
-text-shadow: 5px 5px 4px yellowgreen ; }
+text-shadow: 5px 5px 4px yellowgreen ;
+animation-name: eg;
+animation-duration: 2s;
+animation-iteration-count: 2; }
+
+@keyframes eg{
+  0%{color: red;
+    text-shadow: 2px 3px 10px white;
+    transform: rotateX(30deg) rotateY(45deg);}
+    50%{color: yellow;
+      transform: rotateX(60deg);
+       font-size: 100px;}
+    100%{color: blue;
+       transform: rotateX(300deg);}
+}
 /*jobs/intrest*/
 .content {
     font-size: 35px;
@@ -52,20 +77,40 @@ text-shadow: 5px 5px 4px yellowgreen ; }
     text-shadow: 2px 2px 8px red;
     text-align: center;
 padding-left: 45px;
+animation-name: content;
+animation-delay: 3s;
+animation-duration: 2s;
+animation-iteration-count: 1;
 }
-.button{
-	margin: 10px 100px;
-}
-.button a{color: black;
-           background-color: white;
-           font-size: 30px;
-           font-weight: bold;}
+   
+   @keyframes content{
+    0%{color: yellow;
+      font-size: 100px;
+      transform: rotateX(90deg);}
+    50%{color: green;
+      font-size:70px;
+      transform: rotateX(55deg);}
+      80%{color: red;
+      font-size: 50px;
+      transform: rotateX(40deg);}
+      100%{font-size: 60px;
+        transform: rotateX(60deg);}
+   }
 
-.button a:hover{
-	color: white;
-	background-color: black;
-	box-shadow: 8px 8px 10px white;
-}           
+.button{
+  margin: 10px 100px;
+  animation-name: button;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes button{
+        0%{font-size: 70px;}
+        50%{transform: rotateX(45deg);}
+
+}          
          /*ONLY PORTFOLIO PAGE*/
 
    #subbackground{
@@ -74,8 +119,8 @@ padding-left: 45px;
                   margin-top: -56px;
                   }      
    .text{
-   	    text-align: center;
-   	    font-size: 50px;
+        text-align: center;
+        font-size: 50px;
         text-shadow: 2px 2px 10px white;
    }
    
@@ -98,40 +143,31 @@ padding-left: 45px;
 
 
 #contact{
-	font-size: 29px;
-	text-align: center;
+  font-size: 29px;
+  text-align: center;
    padding: 60px 0px;
   color: wheat;
   text-shadow: 2px 2px 6px white;
 }
-/*#contact a{color: white;
-  padding: 10px 30px;
-  font-weight: bold;
-  font-size: 30px;
-  text-shadow: 2px 2px 12px white;
-}*/
-/* #contact a:hover{ border:3px solid  white;
-  color: black;
-  background-color: white;
-  box-shadow: 2px 2px 10px white;
-  text-shadow: 2px 2px 8px black}*/
+
 form{font-size: 35px;
 padding: 20px;}
 
 input{font-size: 30px;}
 
 #comment{
-	font-size: 30px;
-	height: 300px;
+  font-size: 30px;
+  height: 300px;
 }
 .text2{ background: url(wood2.jpg) no-repeat center center/cover;
-   	    text-align: end;
-   	    font-size: 30px;
+        /*text-align: end;*/
+        font-size: 30px;
         text-shadow: 2px 2px 10px white;
         padding:60px 20px;
         color: wheat;
         float: right;
         margin-top: 245px;}
+
    fieldset {margin-top: 30px;
     background-color: gray;
     width: max-content;
@@ -146,18 +182,19 @@ input{font-size: 30px;}
     border: 6px solid #ad2d14;
     padding: 10px;
     }
+
     #academy , #jobexp{
       font-size: 20px;
      display: flex;
       flex-direction: row;
-    float: left;
-    border: 5px solid white;
+     border: 5px solid white;
     padding: 50px;
     margin-top: 30px;
     margin-left: 30px;
     width: 70%;
 }
 #academy{color: chartreuse;}
+
 #jobexp{color:yellow;}
 
 .job{
@@ -197,9 +234,11 @@ input{font-size: 30px;}
      .five{height: 5px;
      width: 100%;
      background-color: black;}
+
      .box{border: 5px solid black;
       margin: 30px;
       padding: 30px;}
+
      .contents{
       text-align: center;
       font-size: 30px;
@@ -208,14 +247,37 @@ input{font-size: 30px;}
       font-weight: bold;
       padding: 30px;
      }
+
      .points{
       background-color: blue;
       padding: 20px 40px;
+      animation-name:points;
+      animation-duration: 2s;
+      animation-iteration-count: 2;
+     }
+
+     @keyframes points{
+      0%{font-size: 0px;
+       padding: 0px;
+       transform: rotateX(60deg);}
+       50%{font-size: 30px;
+       padding: 0px;
+       transform: rotateX(30deg);}
+       100%{font-size:20px;
+       padding: 30px;
+       transform: rotateX(90deg);}
      }
      .problem{background-color: red;
-     padding: 20px 40px;}
+     padding: 20px 40px;
+     animation-name:points;
+      animation-duration: 2s;
+      animation-iteration-count: 3;}
+
      .solution{background-color: green;
-      padding: 20px 40px;}
+      padding: 20px 40px;
+    animation-name:points;
+      animation-duration: 2s;
+      animation-iteration-count: 4;}
 
      .ill{
       color: red;
@@ -245,3 +307,7 @@ input{font-size: 30px;}
      }
      img{width:45%;
       margin: 10px;}
+      .src{height: 20px;
+        width: 20px;}
+
+        <!-- CodeWithHarry(28 april 2021) CSS Tutorial In Hindi (With Notes) 🔥. YouTube[online]. Avilable form:https://www.youtube.com/watch?v=Edsxf_NBFrw [Accessed 15 may 2021-->
